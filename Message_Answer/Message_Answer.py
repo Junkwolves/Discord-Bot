@@ -1,5 +1,7 @@
 import discord
 
+import const
+
 from discord.ext import commands 
 from discord.ext.commands import Bot
 
@@ -9,4 +11,4 @@ Bot = commands.Bot(command_prefix = '>')
 async def User_Message(ctx):
     await Bot.say("Bot_Answer")
 
-Bot.run("token")
+Bot.run(const.token)
